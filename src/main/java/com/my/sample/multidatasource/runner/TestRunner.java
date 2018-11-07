@@ -28,7 +28,7 @@ public class TestRunner implements CommandLineRunner {
         System.out.println(user);
 
         QueryWrapper<Car> carQueryWrapper = new QueryWrapper<>();
-        userQueryWrapper.last(" limit 1");
+        carQueryWrapper .last(" limit 1");
         Car car = carService.getOne(carQueryWrapper);
         System.out.println(car);
 
