@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.my.sample.multidatasource.dao.mapper.secondary.CarMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.my.sample.multidatasource.entity.po.Car">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="picture" property="picture" />
+        <result column="brand" property="brand" />
+        <result column="model" property="model" />
+        <result column="model_cn" property="modelCn" />
+        <result column="license_tag" property="licenseTag" />
+        <result column="car_computer_unique" property="carComputerUnique" />
+        <result column="car_computer_password" property="carComputerPassword" />
+        <result column="control_center_supplier" property="controlCenterSupplier" />
+        <result column="supplier_id" property="supplierId" />
+        <result column="control_center_factory" property="controlCenterFactory" />
+        <result column="ccid" property="ccid" />
+        <result column="status" property="status" />
+        <result column="electricty" property="electricty" />
+        <result column="mileage" property="mileage" />
+        <result column="totalMileage" property="totalMileage" />
+        <result column="maintainMileage" property="maintainMileage" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="grade_id" property="gradeId" />
+        <result column="park_id" property="parkId" />
+        <result column="insurance_maturity_time" property="insuranceMaturityTime" />
+        <result column="annual_survey_time" property="annualSurveyTime" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="version" property="version" />
+        <result column="standard_mileage" property="standardMileage" />
+        <result column="company_by_risk" property="companyByRisk" />
+        <result column="abatement" property="abatement" />
+        <result column="voltage" property="voltage" />
+        <result column="seat" property="seat" />
+        <result column="area_code" property="areaCode" />
+        <result column="elec_module" property="elecModule" />
+        <result column="geo_code" property="geoCode" />
+        <result column="user_remark" property="userRemark" />
+        <result column="online_time" property="onlineTime" />
+        <result column="location_name" property="locationName" />
+        <result column="is_accurate" property="isAccurate" />
+        <result column="master_status" property="masterStatus" />
+        <result column="slave_status" property="slaveStatus" />
+        <result column="ground_service_company_id" property="groundServiceCompanyId" />
+        <result column="car_code" property="carCode" />
+        <result column="car_drivenumber" property="carDrivenumber" />
+        <result column="modify_source" property="modifySource" />
+        <result column="revice_time" property="reviceTime" />
+        <result column="type" property="type" />
+        <result column="status_change_start_time" property="statusChangeStartTime" />
+        <result column="status_change_end_time" property="statusChangeEndTime" />
+        <result column="fcph" property="fcph" />
+        <result column="wash_car_time" property="washCarTime" />
+        <result column="remark_pic" property="remarkPic" />
+        <result column="car_status" property="carStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, picture, brand, model, model_cn, license_tag, car_computer_unique, car_computer_password, control_center_supplier, supplier_id, control_center_factory, ccid, status, electricty, mileage, totalMileage, maintainMileage, longitude, latitude, grade_id, park_id, insurance_maturity_time, annual_survey_time, create_time, modify_time, version, standard_mileage, company_by_risk, abatement, voltage, seat, area_code, elec_module, geo_code, user_remark, online_time, location_name, is_accurate, master_status, slave_status, ground_service_company_id, car_code, car_drivenumber, modify_source, revice_time, type, status_change_start_time, status_change_end_time, fcph, wash_car_time, remark_pic, car_status
+    </sql>
+
+</mapper>
