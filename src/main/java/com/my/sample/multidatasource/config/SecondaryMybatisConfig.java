@@ -29,14 +29,12 @@ public class SecondaryMybatisConfig extends MybatisPlusAutoConfiguration {
     }
 
     @Bean("secondarySqlSessionFactory")
-    @Qualifier("secondarySqlSessionFactory")
     @Override
     public SqlSessionFactory sqlSessionFactory(@Qualifier("secondaryDataSource") DataSource dataSource) throws Exception {
         return super.sqlSessionFactory(dataSource);
     }
 
     @Bean("secondarySqlSessionTemplate")
-    @Qualifier("secondarySqlSessionTemplate")
     @Override
     public SqlSessionTemplate sqlSessionTemplate(@Qualifier("secondarySqlSessionFactory") SqlSessionFactory sqlSessionFactory) {
         return super.sqlSessionTemplate(sqlSessionFactory);
