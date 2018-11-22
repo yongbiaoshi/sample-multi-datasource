@@ -4,7 +4,8 @@ spring:
       name: employees
       driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.zaxxer.hikari.HikariDataSource
-      jdbc-url: jdbc:mysql://192.168.1.242:3306/employees?useUnicode=true&characterEncoding=UTF-8&generateSimpleParameterMetadata=true
+      # 指定时区，避免时区问题
+      jdbc-url: jdbc:mysql://192.168.1.242:3306/employees?useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=UTF-8&generateSimpleParameterMetadata=true
       username: root
       password: root
       hikari:
@@ -14,7 +15,7 @@ spring:
       name: employees
       driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.zaxxer.hikari.HikariDataSource
-      jdbc-url: jdbc:mysql://192.168.1.242:3306/ground?useUnicode=true&characterEncoding=UTF-8&generateSimpleParameterMetadata=true
+      jdbc-url: jdbc:mysql://192.168.1.242:3306/ground?useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=UTF-8&generateSimpleParameterMetadata=true
       username: root
       password: root
       hikari:
